@@ -1,0 +1,54 @@
+timestamp,service,message,anomaly_reason,ml_anomaly,severity
+2026-05-10 12:41:00,groupadd,"group added to /etc/group: name=rmp1931, GID=1000",user/group modification,0,MEDIUM
+2026-05-10 12:41:00,groupadd,group added to /etc/gshadow: name=rmp1931,user/group modification,0,MEDIUM
+2026-05-10 12:41:00,groupadd,"new group: name=rmp1931, GID=1000",user/group modification,0,MEDIUM
+2026-05-10 12:41:00,useradd,"new user: name=rmp1931, UID=1000, GID=1000, home=/home/rmp1931, shell=/bin/bash, from=/dev/pts/0",user/group modification,0,MEDIUM
+2026-05-10 12:42:54,usermod,add 'rmp1931' to group 'adm',user/group modification,0,MEDIUM
+2026-05-10 12:42:54,usermod,add 'rmp1931' to group 'dialout',user/group modification,0,MEDIUM
+2026-05-10 12:42:54,usermod,add 'rmp1931' to group 'cdrom',user/group modification,0,MEDIUM
+2026-05-10 12:42:54,usermod,add 'rmp1931' to group 'floppy',user/group modification,0,MEDIUM
+2026-05-10 12:42:54,usermod,add 'rmp1931' to group 'sudo',user/group modification,1,HIGH
+2026-05-10 12:42:54,usermod,add 'rmp1931' to group 'audio',user/group modification,0,MEDIUM
+2026-05-10 12:42:54,usermod,add 'rmp1931' to group 'dip',user/group modification,0,MEDIUM
+2026-05-10 12:42:54,usermod,add 'rmp1931' to group 'video',user/group modification,0,MEDIUM
+2026-05-10 12:42:54,usermod,add 'rmp1931' to group 'plugdev',user/group modification,0,MEDIUM
+2026-05-10 12:42:54,usermod,add 'rmp1931' to group 'netdev',user/group modification,0,MEDIUM
+2026-05-10 12:42:54,usermod,add 'rmp1931' to shadow group 'adm',user/group modification,0,MEDIUM
+2026-05-10 12:42:54,usermod,add 'rmp1931' to shadow group 'dialout',user/group modification,0,MEDIUM
+2026-05-10 12:42:54,usermod,add 'rmp1931' to shadow group 'cdrom',user/group modification,0,MEDIUM
+2026-05-10 12:42:54,usermod,add 'rmp1931' to shadow group 'floppy',user/group modification,0,MEDIUM
+2026-05-10 12:42:54,usermod,add 'rmp1931' to shadow group 'sudo',user/group modification,1,HIGH
+2026-05-10 12:42:54,usermod,add 'rmp1931' to shadow group 'audio',user/group modification,0,MEDIUM
+2026-05-10 12:42:54,usermod,add 'rmp1931' to shadow group 'dip',user/group modification,0,MEDIUM
+2026-05-10 12:42:54,usermod,add 'rmp1931' to shadow group 'video',user/group modification,0,MEDIUM
+2026-05-10 12:42:54,usermod,add 'rmp1931' to shadow group 'plugdev',user/group modification,0,MEDIUM
+2026-05-10 12:42:54,usermod,add 'rmp1931' to shadow group 'netdev',user/group modification,0,MEDIUM
+2026-05-11 17:36:56,logind,The system will power off now!,normal,1,LOW
+2026-05-11 17:36:56,logind,System is powering down.,normal,1,LOW
+2026-05-12 17:17:01,CRON,pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0),normal,1,LOW
+2026-05-12 17:17:01,CRON,pam_unix(cron:session): session closed for user root,normal,1,LOW
+2026-05-15 03:10:01,CRON,pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0),root login at night,0,MEDIUM
+2026-05-15 03:10:01,CRON,pam_unix(cron:session): session closed for user root,root login at night,0,MEDIUM
+2026-05-15 03:17:01,CRON,pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0),root login at night,0,MEDIUM
+2026-05-15 03:17:01,CRON,pam_unix(cron:session): session closed for user root,root login at night,0,MEDIUM
+2026-05-15 04:17:01,CRON,pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0),root login at night,0,MEDIUM
+2026-05-15 04:17:01,CRON,pam_unix(cron:session): session closed for user root,root login at night,0,MEDIUM
+2026-05-18 03:10:01,CRON,pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0),root login at night,0,MEDIUM
+2026-05-18 03:10:01,CRON,pam_unix(cron:session): session closed for user root,root login at night,0,MEDIUM
+2026-05-18 03:17:01,CRON,pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0),root login at night,0,MEDIUM
+2026-05-18 03:17:01,CRON,pam_unix(cron:session): session closed for user root,root login at night,0,MEDIUM
+2026-05-19 05:17:00,CRON,pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0),root login at night,1,HIGH
+2026-05-19 05:17:00,CRON,pam_unix(cron:session): session closed for user root,root login at night,1,HIGH
+2026-05-20 04:17:01,CRON,pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0),root login at night,0,MEDIUM
+2026-05-20 04:17:01,CRON,pam_unix(cron:session): session closed for user root,root login at night,0,MEDIUM
+2026-05-21 02:53:09,logind,New seat seat0.,normal,1,LOW
+2026-05-21 02:53:08,login,PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory,normal,1,LOW
+2026-05-21 02:53:08,login,PAM adding faulty module: pam_lastlog.so,normal,1,LOW
+2026-05-21 02:53:08,login,pam_unix(login:session): session opened for user rmp1931(uid=1000) by rmp1931(uid=0),normal,1,LOW
+2026-05-21 02:53:09,logind,New session 1 of user rmp1931.,normal,1,LOW
+2026-05-21 03:10:01,CRON,pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0),root login at night,0,MEDIUM
+2026-05-21 03:10:01,CRON,pam_unix(cron:session): session closed for user root,root login at night,0,MEDIUM
+2026-05-21 03:17:01,CRON,pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0),root login at night,0,MEDIUM
+2026-05-21 03:17:01,CRON,pam_unix(cron:session): session closed for user root,root login at night,0,MEDIUM
+2026-05-21 04:17:01,CRON,pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0),root login at night,0,MEDIUM
+2026-05-21 04:17:01,CRON,pam_unix(cron:session): session closed for user root,root login at night,0,MEDIUM
