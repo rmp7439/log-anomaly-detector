@@ -43,11 +43,16 @@ log-anomaly-detector/
 ```
 
 ## Results
+
+### Detection Results
+
 | Detector | Anomalies Flagged |
 |----------|------------------|
 | Rule Engine | 44 |
 | Isolation Forest | 13 |
 | Hybrid | 53 |
+
+### Severity Breakdown
 
 | Severity | Count |
 |----------|-------|
@@ -55,7 +60,12 @@ log-anomaly-detector/
 | MEDIUM | 40 |
 | LOW | 9 |
 
+### Anomaly Timeline
+
 ![Anomaly Timeline](results/anomaly_timeline.png)
+
+### Feature Distribution
+
 ![Feature Distribution](results/feature_distribution.png)
 
 ## Future Improvements
