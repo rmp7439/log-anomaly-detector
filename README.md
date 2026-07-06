@@ -28,17 +28,6 @@ pip install -r requirements.txt
 jupyter lab detector.ipynb
 ```
 
-## Project Structure
-
-```text
-log-anomaly-detector/
-├── detector.ipynb
-├── results/
-├── requirements.txt
-├── .gitignore
-└── README.md
-```
-
 ## Results
 
 ### Detection Results
