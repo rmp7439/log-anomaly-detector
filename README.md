@@ -1,43 +1,40 @@
 # Log Anomaly Detector
-A hybrid anomaly detection system that parses real Linux auth logs and flags suspicious activity using rule-based detection combined with Isolation Forest ML model.
+
+Hybrid anomaly detection system for identifying suspicious activity in Linux authentication logs using rule-based analysis and Isolation Forest.
 
 ## Features
-- Parses real Linux auth.log into structured DataFrame
-- Engineers security features: night logins, root access, sudo usage, user modifications
-- Rule engine detects known attack patterns (brute force, privilege escalation)
-- Isolation Forest flags statistical outliers rules might miss
-- Hybrid detector combines both for higher coverage
-- Severity-ranked alert CSV output (HIGH/MEDIUM/LOW)
 
-## Language
-Python 3
+- Parse Linux authentication logs into structured datasets
+- Detect common attack patterns with rule-based analysis
+- Identify statistical anomalies using Isolation Forest
+- Combine both approaches for improved detection coverage
+- Generate severity-ranked security alerts
+- Visualize anomaly trends and feature distributions
 
-## Libraries Used
-- pandas, numpy
+## Tech Stack
+
+- Python
+- pandas
+- NumPy
 - scikit-learn
-- matplotlib
-- re, datetime
+- Matplotlib
 
-## Installation
+## Getting Started
+
 ```bash
 git clone https://github.com/rmp7439/log-anomaly-detector
 cd log-anomaly-detector
 pip install -r requirements.txt
-```
-
-## Usage
-```bash
 jupyter lab detector.ipynb
 ```
 
 ## Project Structure
-```
+
+```text
 log-anomaly-detector/
 ├── detector.ipynb
 ├── results/
-│   ├── alerts.csv
-│   ├── anomaly_timeline.png
-│   └── feature_distribution.png
+├── requirements.txt
 ├── .gitignore
 └── README.md
 ```
@@ -46,8 +43,8 @@ log-anomaly-detector/
 
 ### Detection Results
 
-| Detector | Anomalies Flagged |
-|----------|------------------|
+| Detector | Alerts |
+|-----------|-------:|
 | Rule Engine | 44 |
 | Isolation Forest | 13 |
 | Hybrid | 53 |
@@ -55,7 +52,7 @@ log-anomaly-detector/
 ### Severity Breakdown
 
 | Severity | Count |
-|----------|-------|
+|----------|------:|
 | HIGH | 4 |
 | MEDIUM | 40 |
 | LOW | 9 |
@@ -69,7 +66,8 @@ log-anomaly-detector/
 ![Feature Distribution](results/feature_distribution.png)
 
 ## Future Improvements
-- Add Streamlit dashboard for real-time monitoring
-- LSTM Autoencoder for sequence-based anomaly detection
-- Support for multiple log formats (nginx, syslog, Windows Event logs)
-- Email/Slack alerting when HIGH severity event detected
+
+- Streamlit dashboard for interactive monitoring
+- Sequence-based anomaly detection with LSTM Autoencoders
+- Support for additional log formats
+- Email and Slack alerting for high-severity events
